@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="svg" sizes="42x42" href="images/head.svg">
+    <title>ORDER</title>
+    <link rel="stylesheet" href="order.css">
+</head>
+
+<body>
+    <div class="mr">
+        <section>
+
+            <!-- FORMULAIRE-->
+            <form class="Choose">
+                <p>Choose Your Meal : </p>
+                <input class="Breakfast" type="button" value="Fresh Breakfast"> <br>
+                <input class="Fruit" type="button" value="Fruit Salad">
+                <input class="Lunch" type="button" value="Fresh Lunch">
+            </form>
+
+
+        </section>
+    </div>
+
+    <div class="container">
+        <!-- FORMULAIRE-->
+        <form>
+            <input type="First Name" placeholder="First Name">
+            <input type="Last Name" placeholder="Last Name"><br>
+
+            <div style="display: flex; flex-direction: column; align-items: flex-start;">
+                <label class="txt" for="start">Date</label>
+                <input type="date" id="start" name="trip-start" value="2022-07-22" min="2022-01-01" max="2022-12-31">
+            </div>
+
+            <div style="display: flex; flex-direction: column; align-items: flex-start;">
+                <label class="txt" for="appt"> Time </label>
+                <input type="time" id="appt" name="appt" min="09:00" max="20:00" required>
+            </div>
+
+            <div style="display: flex; flex-direction: column; align-items: flex-start;">
+                <label class="txt" for="tentacles">Guest:</label>
+                <input type="number" id="tentacles" name="tentacles" min="1" max="8"> <br>
+            </div>
+
+
+            <input style="grid-column: 1/4; margin: 0 15px; " type="Email" placeholder="Enter Your E-mail"> <br>
+
+            <input class="send" type="button" value="Send">
+        </form>
+
+
+
+</body>
+
+</html>
